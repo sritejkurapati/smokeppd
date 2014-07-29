@@ -629,35 +629,35 @@ namespace SmokePPD
             }  
         }
 
-        //[TestMethod]
-        //[Timeout(TestTimeout.Infinite)]
-        //public void MASCube()
-        //{
-        //    this.UIMap.OpenSSMS();
-        //    Playback.Wait(15000);
-        //    this.UIMap.ConnectToCube();
-        //    Playback.Wait(5000);
-        //    this.UIMap.OpenCubes();
-        //    this.UIMap.AssertMethod1();
-        //}
+        ////[TestMethod]
+        ////[Timeout(TestTimeout.Infinite)]
+        ////public void MASCube()
+        ////{
+        ////    this.UIMap.OpenSSMS();
+        ////    Playback.Wait(15000);
+        ////    this.UIMap.ConnectToCube();
+        ////    Playback.Wait(5000);
+        ////    this.UIMap.OpenCubes();
+        ////    this.UIMap.AssertMethod1();
+        ////}
 
-        //[TestMethod]
-        //public void PPDCubeWithGMOTest1()
-        //{
+        ////[TestMethod]
+        ////public void PPDCubeWithGMOTest1()
+        ////{
 
-        //}
+        ////}
 
-        //[TestMethod]
-        //public void FY14_Expanded_Geo_Cube_with_GMO_Test1()
-        //{
+        ////[TestMethod]
+        ////public void FY14_Expanded_Geo_Cube_with_GMO_Test1()
+        ////{
 
-        //}
+        ////}
 
-        //[TestMethod]
-        //public void Process_PPD_Cube_Geo_Level_Changes()
-        //{
+        ////[TestMethod]
+        ////public void Process_PPD_Cube_Geo_Level_Changes()
+        ////{
 
-        //}
+        ////}
 
 
 
