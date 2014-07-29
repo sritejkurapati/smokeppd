@@ -13,7 +13,7 @@ using Microsoft.VisualStudio.TestTools.UITesting.HtmlControls;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
-
+using OLAPClass;
 
 
 
@@ -629,17 +629,23 @@ namespace SmokePPD
             }  
         }
 
-        ////[TestMethod]
-        ////[Timeout(TestTimeout.Infinite)]
-        ////public void MASCube()
-        ////{
-        ////    this.UIMap.OpenSSMS();
-        ////    Playback.Wait(15000);
-        ////    this.UIMap.ConnectToCube();
-        ////    Playback.Wait(5000);
-        ////    this.UIMap.OpenCubes();
-        ////    this.UIMap.AssertMethod1();
-        ////}
+        [TestMethod]
+        [Timeout(TestTimeout.Infinite)]
+        public void MASCube()
+        {
+            try
+            {
+                methodDescription = "This test method verifies whether the cube [PPD Metric Approval] is active in production environment";
+                Playback.Wait(2000);
+                Class1.GetCubeDetails("CO1MSFTPPPDSQL1", "PPDMetricApprovalService", "PPD Metric Approval");
+
+            }
+            catch (Exception ex)
+            {
+                errorMessage = ex.Message;
+                throw;
+            }
+        }
 
         ////[TestMethod]
         ////public void PPDCubeWithGMOTest1()
@@ -647,30 +653,32 @@ namespace SmokePPD
 
         ////}
 
-        ////[TestMethod]
-        ////public void FY14_Expanded_Geo_Cube_with_GMO_Test1()
-        ////{
+        //[TestMethod]
+        //public void FY14_Expanded_Geo_Cube_with_GMO_Test1()
+        //{
 
-        ////}
+        //}
 
         ////[TestMethod]
         ////public void Process_PPD_Cube_Geo_Level_Changes()
         ////{
 
         ////}
-
-
-
+        
         [TestMethod]
         public void PPDCubeFunctions()
         {
             try
             {
-
-            }
-            catch(Exception e)
-            {
+                methodDescription = "This test method verifies whether the cube [PPD_Cube_FY14] is active in development environment";
+                Playback.Wait(2000);
+                Class1.GetCubeDetails("CO1MSFTDPPDSQL1", "PPD_Cube", "PPD_Cube_FY14");
                 
+            }
+            catch(Exception ex)
+            {
+                errorMessage = ex.Message;
+                throw;
             }
         }
 
