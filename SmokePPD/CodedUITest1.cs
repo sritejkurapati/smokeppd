@@ -790,7 +790,6 @@ namespace SmokePPD
             }  
         }
 
-
         public static void SendMail(string messageBody, string subject)
         {
             try
