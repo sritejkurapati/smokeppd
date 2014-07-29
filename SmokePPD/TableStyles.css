@@ -1,0 +1,49 @@
+﻿table {
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+
+td {
+    border: 1px solid #000000;
+    padding: 5px;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+
+p {
+    font-family: 'Segoe UI';
+    font-size: 12px;
+  
+}
+
+
+
+.tableHeading {    
+    font-size: 20px;    
+    color: #2A2A2A;    
+    font-family: 'Segoe UI';
+
+}
+
+th {
+    background: #505050;
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 13px;
+    height: 20px;
+    border: 1px solid #000000;
+    font-weight: 500;
+}
+
+body{
+    
+}
+                                                                                          
+                                           
