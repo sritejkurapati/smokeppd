@@ -69,7 +69,6 @@
     <None Include="UIMap.uitest" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="OLAP1.exe" />
     <Content Include="TableStyles.css" />
   </ItemGroup>
   <Choose>
