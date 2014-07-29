@@ -799,7 +799,7 @@ namespace SmokePPD
                 
                 string sMailIToAuthenticate = "v-swsriv@microsoft.com"; //Variable to store the MailIToAuthenticate from Excel
         string sAuthencationPasswd = "July@2014";  //Variable to store the AuthencationPasswd from Excel
-                string toAddress = "sritejkr@maqsoftware.net";
+                string toAddress = "vimalv@maqsoftware.com";
                 System.Net.Mail.SmtpClient c = new System.Net.Mail.SmtpClient();
                 c.Host = "smtphost.redmond.corp.microsoft.com";
                 c.Port = 25;
@@ -808,7 +808,7 @@ namespace SmokePPD
                 c.Credentials = new System.Net.NetworkCredential(sMailIToAuthenticate, sAuthencationPasswd);
                 msg.To.Add(toAddress);
                 //msg.CC.Add(sToAddress2);
-                //msg.CC.Add(sToAddress3);
+                msg.CC.Add("amitm@maqsoftware.com");
                 msg.From = new System.Net.Mail.MailAddress(sMailIToAuthenticate, "PPD Smoke Test Automation");
                 msg.Subject = subject;
                 msg.IsBodyHtml = true;
